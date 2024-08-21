@@ -1,0 +1,411 @@
+/* Estas no las usare */
+/*
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item a {
+    color: white;
+    font-weight: bold;
+}
+*/
+
+/* Colours --------------------------------------*/
+:root {
+    --primary-color: #02306D;
+    --secondary-color: #91A6D3;
+    --background-color: #F2F4F8;
+    --accent-color: #BECDE5;
+    --font-primary: "Montserrat";
+    --font-secondary: "Cormorant Garamond";
+    --font-accent: "Homemade Apple", cursive;
+}
+
+/* Clases generales ---------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+}
+
+h2, h3 {
+    font-family: var(--font-secondary);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-family: var(--font-primary);
+}
+
+
+button{
+    color: white; /* Resets the color to inherit from the parent */
+    background-color: var(--secondary-color);
+    text-decoration: none; /* Adds underline to resemble the default link */
+    border: none; /* No border */
+    margin: 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border: none;
+    font-family: var(--font-secondary);
+}
+
+.background1 {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.background2 {
+    background-color: var(--background-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.content-border {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+/* Sección de Inicio */
+.logo img {
+    max-width: 50vh; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 15vw;
+}
+
+/* Seccion del menu principal ----------------- */
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--secondary-color);
+    padding: 7vh;
+    border-radius: 5px;
+
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Button Styling */
+.menu-button a {
+    padding: 1vh 5vw;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    border: 1px solid white; /* Thin white border */
+    color: white; /* Text color */
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    text-align: center; /* Centers text */
+}
+
+.menu-button :hover {
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+/* Clases para darl padding especifico a los botones, porque quedaba diferente */
+.boton2 a{
+    padding: 8px 104px;; /* Espaciado interno del botón */
+}
+.boton3 a{
+    padding: 8px 103px;; /* Espaciado interno del botón */
+}
+.boton4 a{
+    padding: 8px 96px;; /* Espaciado interno del botón */
+}
+.boton5 a{
+    padding: 8px 84px;; /* Espaciado interno del botón */
+}
+
+/* Social links Styling */
+/* Mejoras: Cambiarlos por iconos */
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 20px; /* Espacio a la izquierda del menú */
+}
+
+.social-item  {
+    color: white;
+}
+
+.social-item :hover {
+    color: var(--primary-color);
+}
+
+
+/* Seccion de metas y proposito-------------- */
+.goals-and-purpose {
+    color: white;
+    display: flex;
+    flex-direction: row; /* Cambiado a 'row' para alinear los elementos horizontalmente */
+    align-items: center;
+    justify-content: center; /* Agregado para espaciar los elementos */
+    gap: 2vw; /* Espacio entre el texto y la imagen */
+    padding: 2vw;
+}
+.goals-and-purpose :hover {
+    background-color: var(--secondary-color);
+}
+.goals-content {
+    max-width: 60%; 
+}
+.image-container  {
+    max-width: 20vw; /*Esta clase es para que elcontenedor no sea mas grande, y asi no se vea el hoover que no debe verse en la imagen */
+    height: 77vh;
+    border-radius: 8px;
+}
+.image-container img {
+    max-width: 20vw;
+    height: 77vh;
+    border-radius: 8px;
+}
+
+
+/* Seccion de Meet me y My Skills-------------- */
+.meet-me{
+    color: white;
+    display: flex;
+    flex-direction: row; /* Cambiado a 'row' para alinear los elementos horizontalmente */
+    align-items: center;
+    justify-content: center; /* Agregado para espaciar los elementos */
+    gap: 2vw; /* Espacio entre el texto y la imagen */
+    padding: 2vw;
+}
+.meet-me :hover{
+    background-color: var(--secondary-color);
+}
+.Profile img{
+    max-width: 20vw;
+    height: 50vh;
+    border-radius: 8px;
+}
+.meet-me-info{
+    max-width: 60%; 
+    display: flex;
+    flex-direction: row; /* Cambiado a 'row' para alinear los elementos horizontalmente */
+    align-items: center;
+    justify-content: center; /* Agregado para espaciar los elementos */
+    gap: 2vw; /* Espacio entre el texto y la imagen */
+    padding: 2vw;
+}
+.skills-info{
+    padding:7vh;
+}
+
+/* Sección de Diseños ------------------- */
+.my-designs{
+    color: var(--primary-color);
+    font-size: large;
+}
+
+.designs-row{
+    display: flex;
+    flex-direction: row; /* Cambiado a 'row' para alinear los elementos horizontalmente */
+    align-items: center;
+    justify-content: center; /* Agregado para espaciar los elementos */
+    gap: 2vw; /* Espacio entre el texto y la imagen */
+    padding: 2vw;
+}
+
+.designs-row :hover{
+    background-color: var(--accent-color);
+    border-style: none;
+}
+
+.design-item {
+    width: 40%;
+}
+
+.design-item img {
+    width: 70%;
+    border-radius: 8px;
+}
+
+.design-item1{
+ height: 111vh;
+}
+
+/* Sección de Proyectos ------------------- */
+.my-projects{
+    color: var(--primary-color);
+}
+
+.project1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    width: 50%;
+    margin-bottom: 20px; /* Añade espacio entre la descripción y el carrusel */
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    background-color: var(--secondary-color);
+}
+
+.mySlides {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain; /* Ajusta la imagen para que se vea completa */
+}
+
+/* Seccion de futuros proyectos---------------------------------------- */
+.project2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15% 10%;
+}
+
+
+/* Footer ---------------------------------------- */
+.footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--font-accent);
+}
+
+.footer-Image img{
+   width: 100%;
+}
+
+
+/* Fonts ------------------------------------*/
+.homemade-apple-regular {
+    font-family: "Homemade Apple", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.montserrat-regular400> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-regular {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-medium {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-semibold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-bold {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .cormorant-garamond-light-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-regular-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-medium-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-semibold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .cormorant-garamond-bold-italic {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
